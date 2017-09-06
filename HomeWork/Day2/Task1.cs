@@ -1,17 +1,16 @@
 using System;
 
-namespace Task1 {
-    class Program {
+namespace HomeWork1_Day2 {
+    class Task1 {
         static void Main(string[] args) {
 
-            Console.Write("Введите единицу измерения температуры: ");
+            Console.Write("Введите единицу измерения температуры (C/F): ");
             string str = Console.ReadLine();
             Console.WriteLine();
 
             double temperatureF, temperatureC;
 
-            if (str == "F" || str == "f")
-            {
+            if (str == "F" || str == "f") {
                 Console.Write("Введите температуру в Фаренгейтах(F): ");
                 temperatureF = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine();
@@ -20,8 +19,8 @@ namespace Task1 {
                 Console.WriteLine("Температура в Цельсия(C): {0:0.00}", temperatureC);
                 Console.WriteLine();
             }
-            if (str == "C" || str == "c")
-            {
+            
+            if (str == "C" || str == "c") {
                 Console.Write("Введите температуру в Цельсия(C): ");
                 temperatureC = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine();
