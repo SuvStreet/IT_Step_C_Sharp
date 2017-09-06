@@ -1,7 +1,7 @@
 using System;
 
-namespace Task2 {
-    class Program {
+namespace HomeWork2_Day2 {
+    class Task2 {
         static void Main(string[] args) {
 
             Console.WriteLine("Введите коордионаты первой(A) вершины треугольника.");
