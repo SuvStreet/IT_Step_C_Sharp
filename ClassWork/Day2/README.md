@@ -843,9 +843,11 @@ class Program
 }
 ```
 
-for with i++: 1307 for with ++i: 1314
+**for with i++: 1307 for with ++i: 1314**
 
-while with i++ : 1261 while with ++i : 1276
+**while with i++ : 1261 while with ++i : 1276**
+
+***
 
 [**-->     HomeWork2     <--**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/HomeWork/Day2)
 
