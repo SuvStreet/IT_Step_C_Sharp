@@ -11,4 +11,4 @@
 
 **11.09.2017**
 
-[**<-- Массивы и строки**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day3#Массивы-и-строки) `=/=` [** -->**]()
+[**<-- Введение в классы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/ClassWork/Day4/README.md#Введение-в-классы) `=/=` [** -->**]()
