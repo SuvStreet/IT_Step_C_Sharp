@@ -3,4 +3,10 @@
 Введение в платформу Microsoft .NET
 ===
 
+***
+
+[**-->     HomeWork1     <--**]()
+
 **04.09.2017**
+
+[**Основы языка программирования C# -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day2#Основы-языка-программирования-c)
