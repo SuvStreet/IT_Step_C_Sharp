@@ -339,6 +339,10 @@ person2.Name = "Андрей";
 
 
 
+***
 
+[**-->     HomeWork4     <--**]()
 
 **07.09.2017**
+
+[**<-- Массивы и строки**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day3#Массивы-и-строки) `=/=` [**Исключения (Exceptions) -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/ClassWork/Day5/README.md#Исключения-exceptions)
