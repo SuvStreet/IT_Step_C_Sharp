@@ -3,4 +3,10 @@
 Массивы и строки
 ===
 
+***
+
+[**-->     HomeWork3     <--**]()
+
 **06.09.2017**
+
+[**<-- Основы языка программирования C#**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day2#Основы-языка-программирования-c) `=/=` [**Введение в классы -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day4#Введение-в-классы)
