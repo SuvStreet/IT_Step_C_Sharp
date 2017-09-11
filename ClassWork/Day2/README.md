@@ -533,19 +533,321 @@ Console.WriteLine("Ввод/вывод средствами класса Console
 
 ![](https://pp.userapi.com/c836334/v836334243/5eda3/sHVix_Fs1Qk.jpg)
 
+```cs
+  int x = 10; int y = x; 
+  x = x - 5; 
+  Console.WriteLine("X:\t" + x.ToString()); 
+//выводит в консоль: X: 5 
+  Console.WriteLine("Y:\t" + y.ToString()); 
+//выводит в консоль: Y: 10
+```
 
-29
+```cs
+  Point a = new Point(); // Point – класс (ссылочный тип) 
+  a.X = 10; 
+  Point b = a; 
+  b.X = b.X - 5; 
+  Console.WriteLine("a.X:\t" + a.X.ToString()); 
+//выводит в консоль: a.X: 5 
+   Console.WriteLine("b.X:\t" + b.X.ToString()); 
+//выводит в консоль: b.X: 5
+```
 
+```cs
+   Point a = new Point();     Point b = new Point(); 
+   b.X = a.X = 10;   b.X = b.X - 5; 
+   Console.WriteLine("a.X:\t" + a.X.ToString()); 
+//выводит в консоль: a.X: 10 
+   Console.WriteLine("b.X:\t" + b.X.ToString()); 
+//выводит в консоль: b.X: 5 
+   Console.ReadLine(); 
+```
 
+Преобразование типов
+---
 
+Неявно допустимо приводить друг к другу следующие типы данных
 
+Из типа         | К типу
+----------------|-------------------------------------------------------
+**`byte`**      | short, ushort, int, uint, long, ulong, float, double, decimal
+**`sbyte`**     | short, int, long, float, double, decimal
+**`short`**     | int, long, float, double, decimal
+**`ushort`**    | int, uint, long, ulong, float, double, decimal
+**`int`**       | long, float, double, decimal
+**`uint`**      | long, ulong, float, double, decimal
+**`long`**      | float, double, decimal
+**`ulong`**     | float, double, decimal
+**`char`**      | ushort, int, uint, long, ulong, float, double, decimal
+**`float`**     | double
 
+**`Приведение`** - это  команда  компилятору преобразовать результат вычисления выражения в указанный тип.  
 
+```cs
+double X= 23.7; 
+double Y = 17.5; 
+int R = (int)(X / Y); // 1 
 
+double X= 23.7; 
+double Y = 17.5; 
+double R = (int)(X / Y); // 1 
+```
 
+Допустимо явное приведение друг к другу следующих базовых типов данных
 
+Из типа         | К типу
+----------------|-------------------------------------------------------
+**`byte`**      | sbyte, char
+**`sbyte`**     | byte, ushort, uint, ulong, char
+**`short`**     | sbyte, byte, ushort, uint, ulong, char
+**`ushort`**    | sbyte, byte, short, char
+**`int`**       | sbyte, byte, short, ushort, uint, ulong, char
+**`uint`**      | sbyte, byte, short, ushort, int, char
+**`long`**      | sbyte, byte, short, ushort, int, uint, ulong, char
+**`ulong`**     | sbyte, byte, short, ushort, int, uint, long, char
+**`char`**      | sbyte, byte, short
+**`float`**     | sbyte, byte, short, ushort, int, uint, long, ulong, char, decimal
+**`double`**    | sbyte, byte, short, ushort, int, uint, long, ulong, char, float, decimal
+**`decimal`**   | sbyte, byte, short, ushort, int, uint, long, ulong, char, float, double
 
+Преобразование типов в выражениях
+---
 
+**`ЕСЛИ`**  один  операнд  имеет  тип  **`decimal`**,  TO  и  второй  операнд  продвигается  к  типу **`decimal`**  (но  если  второй  операнд  имеет  тип  **`float`**  или  **`double`**,  результат  будет ошибочным).
 
+**`ЕСЛИ`** один операнд имеет тип **`double`**, TO и второй операнд продвигается к типу **`double`**.
+
+**`ЕСЛИ`** один операнд имеет тип **`float`**, TO и второй операнд продвигается к типу  **`float`**.
+
+**`ЕСЛИ`** один операнд имеет тип **`ulong`**, TO и второй операнд продвигается к типу **`ulong`** (но если второй операнд имеет тип **`sbyte`**, **`short`**, **`int`** или **`long`**, результат будет ошибочным).
+
+**`ЕСЛИ`** один операнд имеет тип **`long`**, TO и второй операнд продвигается к типу  **`long`**.
+
+**`ЕСЛИ`**  один операнд имеет тип  **`uint`**, а второй — тип **`sbyte`**, **`short`** или **`int`**, TO оба операнда продвигаются к типу **`long`**.
+
+**`ЕСЛИ`** один операнд имеет тип **`uint`**, TO и второй операнд продвигается к типу **`uint`**.
+
+**`ИНАЧЕ`** оба операнда продвигаются к типу **`int`**.  
+
+[Класс Convert](https://msdn.microsoft.com/ru-ru/library/system.convert(v=vs.110).aspx)
+---
+
+```cs
+// выводим пользователю сообщение о том, что необходимо ввести целое число в консоль
+  Console.Write("Введите целое число: ");
+  
+// получаем строку из консоли в строковую переменную 
+  string numberString = Console.ReadLine(); 
+  
+//конвертируем строковое значение в числовое (тип int) 
+  int number = Convert.ToInt32(numberString); 
+  int number = Int32.Parse(numberString); // 2-ой способ 
+ 
+//конвертируем строковое значение в числовое (тип double) 
+  double numberD = Convert.ToDouble(numberString);
+  
+//выводим результат 
+  Console.WriteLine("Успешно отконвертирована в тип данных int!"); 
+  Console.WriteLine("Число = " + number); 
+```
+
+Операторы
+---
+
+![](https://pp.userapi.com/c639919/v639919690/43720/FaS2Ys-xeaE.jpg)
+
+Операторы отношений
+---
+
+Оператор | Действие
+---------|-----------------
+**`==`** | Равно 
+**`!=`** | Не равно 
+**`>`**  | Больше
+**`<`**  | Меньше
+**`>=`** | Больше или равно
+**`<=`** | Меньше или равно
+
+Логические операторы  
+---
+
+Оператор    | Действие
+------------|-----------------
+**`&`**     | И 
+**`\|`**    | ИЛИ 
+**`^`**     | Исключающее ИЛИ 
+**`&&`**    | Сокращенное И 
+**`\|\|`**  | Сокращенное ИЛИ 
+**`!`**     | НЕ 
+
+Оператор    | Действие
+------------|-----------------
+**`\|`**    | Побитовый  оператор  ИЛИ  сравнивает  каждый  бит  его  первого  операнда  к соответствующему  биту  его  второго  операнда. **`Если  один  из  битов  равен  1, соответствующий  бит  результата  устанавливается  в  1.  В  противном  случае соответствующий бит результата устанавливается в 0.`**
+**`&`**     | Оператор  побитового  и  сравнивает  каждый  бит  первого  операнда  его  к  соответствующему биту его второго операнда. **`Если оба бита равны 1, соответствующий бит  результата  устанавливается  в  1.  В  противном  случае  соответствующий  бит  результата устанавливается в 0.`**
+**`^`**     | Побитовое-исключающее ИЛИ - оператор сравнивает каждый бит его первого операнда к соответствующему биту его второго операнда. **`Если один бит равен 0, а другой бит равен 1,  соответствующий  бит  результата  устанавливается  в  1.  В  противном  случае соответствующий бит результата устанавливается в 0.`**  
+
+```cs
+int a = 10;
+result = a | 5;               Операция |  // 10 - 1010 
+Console.WriteLine(result);                // 5  - 0101 
+                                          // 15 - 1111  Ответ 
+       
+result = a & 3;               Операция &  // 10 - 1010 
+Console.WriteLine(result);                // 3  - 0011 
+                                          // 2  - 0010  Ответ 
+   
+result = a ^ 6;               Операция ^  // 10 - 1010 
+Console.WriteLine(result);                // 6  - 0110 
+                                          // 12 - 1100  Ответ
+```
+
+```cs
+int a = 10;
+int b = 1;
+int result = a >> b;
+  //деление на 2 в степени второго операнда, в данном случае в степени 1, то есть просто на 2
+Console.WriteLine(result); // 10 / 2 = 5        
+   
+result = a << b; 
+  // умножение 2 в степени второго операнда, в данном случае в степени 1, то есть просто на 2 
+Console.WriteLine(result); // 10 * 2 = 20 
+```
+
+Приоритет операторов
+---
+
+```cs
+int a = 10; int b = 1; 
+int result = a + b * 2; 
+Console.WriteLine(result); //12
+
+result = (a + b) * 2; 
+Console.WriteLine(result); //22
+
+result = a + b - 4 * 2; 
+Console.WriteLine(result); //3
+
+result = (a + (b - 4)) * 2; 
+Console.WriteLine(result); //14 
+```
+
+Условия
+---
+
+![](https://pp.userapi.com/c638228/v638228690/62359/qTmnNiv1L3U.jpg)
+
+Особенности оператора switch   
+---
+
+* Для  управления оператором switch может быть использовано выражение любого целочисленного, перечислимого или строкового тип. 
+* В  С#  должно  соблюдаться  правило недопущения **"провалов"** в передаче управления ходом выполнения программы (наличие в каждой ветви break). 
+
+Тернарная операция
+---
+
+```cs
+int max = 5 > 4 ? 5 : 4; 
+```
+
+Циклы
+---
+
+![](https://pp.userapi.com/c840129/v840129690/22c72/DMmNdPfrL9s.jpg)
+
+1. Элемент **«инициализация»** устанавливает **`управляющую переменную цикла`** равной **`начальному значению`**. Эта переменная действует в качестве **`счетчика`**, который **`управляет работой цикла`**. 
+2. В  элементе **«условие»** проверяется значение управляющей переменной цикла. **`Результат этой проверки определяет, выполнится  цикл  for  еще раз или нет`**. 
+3. Элемент **«приращение»** определяет, как **`изменяется значение управляющей переменной цикла`** после одного прохода цикла.
+
+Цикл while
+---
+
+![](https://pp.userapi.com/c841236/v841236690/17f95/GsuHn3mBXM0.jpg)
+
+**`Общая форма цикла while имеет такой вид:`**
+
+```cs
+whilе (условие продолжения цикла)  
+{ инструкция; } 
+ 
+whilе (условие продолжения цикла)  
+{  
+   инструкция 1; 
+   инструкция 2; 
+   ... 
+   инструкция N; 
+} 
+```
+
+Цикл do-while
+---
+
+![](https://pp.userapi.com/c840420/v840420690/4e23/hFNWWsoQzYc.jpg)
+
+**`Общий формат  имеет такой вид:`**
+
+```cs
+do  
+{ 
+  инструкция; 
+}  
+while (условие) {}; 
+
+do  
+{ 
+  инструкция 1; 
+  инструкция 2; 
+  ... 
+  инструкция N; 
+}  
+while (условие) {};
+```
+
+Цикл **`do-while`** всегда выполняется **`хотя бы один раз`**.
+
+Примечание
+---
+
+```cs
+class Program 
+{ 
+    const int counter = 1024 * 1024; 
+    static void Main(string[] args) 
+    { 
+        for (int i = 0; i < counter; ++i) 
+        { 
+            Console.WriteLine(i); 
+        }
+        
+        for (int i = 0; i < counter; i++) 
+        { 
+            Console.WriteLine(i); 
+        } 
+    } 
+} 
+```
+
+```cs
+using System; 
+using System.Diagnostics; 
+class Program 
+{ 
+    static void Main(string[] args) 
+    { 
+        var sw = new Stopwatch();  
+        sw.Start();
+        for (int i = 0; i < 2000000000; i++) { } 
+        // int i = 0; 
+        // while (i < 2000000000) {++i;} 
+        Console.WriteLine(sw.ElapsedMilliseconds); 
+    }
+}
+```
+
+for with i++: 1307 for with ++i: 1314
+while with i++ : 1261 while with ++i : 1276
+
+[**-->     HomeWork2     <--**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/HomeWork/Day2)
 
 **05.09.2017**
+
+[**<-- Введение в платформу Microsoft .NET**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day1#Введение-в-платформу-microsoft-net) `=/=` [**Массивы и строки -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day3#Массивы-и-строки)
