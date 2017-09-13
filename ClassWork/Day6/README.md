@@ -233,34 +233,123 @@ public static bool operator >(CPoint op1, CPoint op2)
 }
 ```
 
+Перегрузка операторов true и false
+---
 
-13
+* Операторы true и false должны **`перегружаться попарно`**, а не раздельно.
+* После перегрузки этих ключевых слов в качестве унарных операторов для конкретного класса появляется возможность использовать объекты этого класса для управления операторами **`if, while, for и do-while или же в условном выражении ?.`**
 
+```cs
+// Перегружаем оператор false
+public static bool operator false(CPoint obj)
+{
+  if ((obj.x <= 0) || (obj.y <= 0))
+    return true;
+  return false;
+}
 
+// Обязательно перегружаем оператор true
+public static bool operator true(CPoint obj)
+{
+  if ((obj.x > 0) && (obj.y > 0))
+    return true;
+  return false;
+}
+```
 
+```cs
+CPoint p5 = new CPoint(10,10);
+if (p5)
+  Console.WriteLine("Все координаты объекта p5 положительны");
+```
 
+Перегрузка логических операторов
+---
 
+перегрузке подлежат только операторы **`&`**, **`|`** и **`!`**
 
+```cs
+// перегрузка бинарного оператора & (оператор)
+public static bool operator &(CPoint A, CPoint B)
+{
+  if(A.x==B.x && A.y==B.y)
+    return true;
+  else
+    return false;
+}
 
+// перегрузка бинарного оператора |
+public static bool operator |(CPoint A, CPoint B)
+{
+  if (A.x == B.x || A.y == B.y)
+    return true;
+  else
+    return false;
+}
+```
 
+Перегрузка логических операторов (|| и &&)
+---
 
+`Для того, чтобы применение укороченных логических операторов && и || стало возможным, необходимо:`
 
+* в классе должна быть произведена перегрузка логических операторов & и |.
+* перегружаемые методы операторов & и | должны возвращать значение того же типа, что и у класса, для которого эти операторы перегружаются.
+* каждый параметр должен содержать ссылку на объект того класса, для которого перегружается логический оператор.
+* для класса должны быть перегружены операторы true и false.
 
+**Если все эти условия выполняются, то укороченные логические операторы автоматически становятся пригодными для применения.**
 
+Оператор явного преобразования типа (explicit)
+---
 
+```cs
+public static explicit operator Digit(byte argument)
+{
+  Digit digit = new Digit(argument);
+  return digit;
+}
+```
 
+```cs
+class MainClass
+{
+  static void Main()
+  {
+    byte variable = 1;
+    
+    // Явное преобразование byte-to-Digit
+    Digit digit = (Digit)varible;
+  }
+}    
+```
 
+**`Ключевое слово explicit служит для создания оператора явного преобразования типа.`**
 
+Оператор неявного преобразования типа (implicit)
+---
 
+```cs
+public static implicit operator Digit(byte argument)
+{
+  Digit digit = new Digit(argument);
+  return digit;
+}
+```
 
+```cs
+class MainClass
+{
+  static void Main()
+  {
+    byte variable = 1;
+    
+    // Неявное преобразование byte-to-Digit
+    Digit digit = varible;
+  }
+} 
 
-
-
-
-
-
-
-
+**`Ключевое слово implicit служит для создания оператора неявного преобразования типа.`**
 
 ***
 
