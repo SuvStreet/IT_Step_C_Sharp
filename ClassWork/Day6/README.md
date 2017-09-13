@@ -268,4 +268,4 @@ public static bool operator >(CPoint op1, CPoint op2)
 
 **12.09.2017**
 
-[**<-- Исключения (Exceptions)**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day5#Исключения-exceptions) `=/=` [** -->**]()
+[**<-- Исключения (Exceptions)**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day5#Исключения-exceptions) `=/=` [**Пространство имён -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/ClassWork/Day7/README.md#Пространство-имён)
