@@ -119,23 +119,16 @@ internal class Complex
 Унарные операторы С# и СLS-совместимые имена соответствующих методов
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Оператор C# | Имя специального метода | Рекомендуемое CLS-совместимое имя метода
+------------|-------------------------|-----------------------
+**`+`**     | op UnaryPlus            | Plus
+**`-`**     | op UnaryNegation        | Negate
+**`!`**     | op LogicalNot           | Not
+**`~`**     | op OnesComplement       | OnesComplement
+**`++`**    | op Increment            | Increment
+**`--`**    | op Decrement            | Decrement
+**`нет`**   | op True                 | IsTrue { get; }
+**`нет`**   | op False                | IsFalse { get; }
 
 Бинарные операторы и их СLS-совместимые имена методов
 ---
