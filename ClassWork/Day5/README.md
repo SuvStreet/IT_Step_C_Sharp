@@ -632,4 +632,4 @@ catch (OverflowException ex)
 
 **11.09.2017**
 
-[**<-- Введение в классы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/ClassWork/Day4/README.md#Введение-в-классы) `=/=` [**Перегрузка операторов -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day6#Перегрузка-операторов)
+[**<-- Введение в классы**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day4) `=/=` [**Перегрузка операторов -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day6#Перегрузка-операторов)
