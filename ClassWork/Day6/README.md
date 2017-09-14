@@ -133,15 +133,24 @@ internal class Complex
 Бинарные операторы и их СLS-совместимые имена методов
 ---
 
-
-
-
-
-
-
-
-
-
+Оператор C# | Имя специального метода | Рекомендуемое CLS-совместимое имя метода
+------------|-------------------------|-----------------------
+**`+`**     | op_Addition             | Add
+**`-`**     | op_Subtraction          | Subtract
+**`*`**     | op_Multiply             | Multiply
+**`/`**     | op_Division             | Divide
+**`%`**     | op_Modulus              | Mod
+**`&`**     | op_BitwiseAnd           | BitwiseAnd
+**`|`**     | op_BitwiseOr            | BitwiseOr
+**`^`**     | op_ExclusiveOr          | Xor
+**`<<`**    | op_LeftShift            | LeftShift
+**`>>`**    | op_RightShift           | RightShift
+**`==`**    | op_Equality             | Equals
+**`!=`**    | op_Inequality           | Compare
+**`<`**     | op_LessThan             | Compare
+**`>`**     | op_GreaterThan          | Compare
+**`<=`**    | op_LessThanOrEqual      | Compare
+**`>=`**    | op_GreaterThanOrEqual   | Compare
 
 Выполнение операций со встроенными в C# типами данных
 ---
