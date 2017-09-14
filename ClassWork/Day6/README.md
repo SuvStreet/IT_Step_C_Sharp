@@ -141,7 +141,7 @@ internal class Complex
 **`/`**     | op_Division             | Divide
 **`%`**     | op_Modulus              | Mod
 **`&`**     | op_BitwiseAnd           | BitwiseAnd
-**`|`**     | op_BitwiseOr            | BitwiseOr
+**`\|`**     | op_BitwiseOr            | BitwiseOr
 **`^`**     | op_ExclusiveOr          | Xor
 **`<<`**    | op_LeftShift            | LeftShift
 **`>>`**    | op_RightShift           | RightShift
