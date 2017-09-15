@@ -1,8 +1,15 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace HomeWork2_Day2 {
-    class Task2 {
-        static void Main(string[] args) {
+namespace HomeWork2_Day2
+{
+    class Task2
+    {
+        static void Main(string[] args)
+        {
 
             Console.WriteLine("Введите коордионаты первой(A) вершины треугольника.");
             Console.Write("x1: ");
@@ -32,14 +39,16 @@ namespace HomeWork2_Day2 {
             double b = Math.Sqrt(Math.Pow((x3 - x2), 2) + Math.Pow((y3 - y2), 2));
             double c = Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2));
 
-            if (a <= b + c && b <= a + c && c <= a + b) {
+            if (a <= b + c && b <= a + c && c <= a + b)
+            {
                 double p = (a + b + c) / 2;
 
                 double S = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
                 Console.WriteLine("Площадь треугольника S = {0:0.0000}", S);
                 Console.WriteLine();
             }
-            else {
+            else
+            {
                 Console.WriteLine("Одна сторона треугольника больше суммы двух других сторон.\nТакой треугольник не может существовать.");
                 Console.WriteLine();
             }
