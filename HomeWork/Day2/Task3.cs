@@ -1,18 +1,28 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace HomeWork3_Day2 {
-    class Task3 {
-        static void Main(string[] args) {
+namespace HomeWork3_Day2
+{
+    class Task3
+    {
+        static void Main(string[] args)
+        {
             bool flag = true;
 
-            while (flag == true) {
+            while (flag == true)
+            {
 
                 Console.Write("Введите число в диопозоне от 100 до 999: ");
                 System.Int32 digit = Convert.ToInt32(Console.ReadLine());
 
-                if (digit >= 100 && digit <= 999) {
+                if (digit >= 100 && digit <= 999)
+                {
 
-                    switch (digit / 100) {
+                    switch (digit / 100)
+                    {
                         case 1: Console.Write("сто");
                             break;
                         case 2: Console.Write("двести");
@@ -33,9 +43,11 @@ namespace HomeWork3_Day2 {
                             break;
                     }
 
-                    switch ((digit / 10) % 10) {
+                    switch ((digit / 10) % 10)
+                    {
                         case 1:
-                            switch (digit % 10) {
+                            switch (digit % 10)
+                            {
                                 case 0: Console.WriteLine(" десять");
                                     break;
                                 case 1: Console.WriteLine(" одиннадцать");
@@ -76,7 +88,8 @@ namespace HomeWork3_Day2 {
                             break;
                     }
 
-                    switch ((digit / 10) % 10) {
+                    switch ((digit / 10) % 10)
+                    {
                         case 0:
                         case 2:
                         case 3:
@@ -86,7 +99,8 @@ namespace HomeWork3_Day2 {
                         case 7:
                         case 8:
                         case 9:
-                            switch (digit % 10) {
+                            switch (digit % 10)
+                            {
                                 case 1: Console.Write(" один");
                                     break;
                                 case 2: Console.Write(" два");
@@ -115,7 +129,8 @@ namespace HomeWork3_Day2 {
                 Console.WriteLine("\nЕсли хотите выйти намите Escape, что бы продолжить нажмите любую клавишу...\n");
                 ConsoleKeyInfo key = Console.ReadKey();
                 Console.Clear();
-                if (key.Key == ConsoleKey.Escape) {
+                if (key.Key == ConsoleKey.Escape)
+                {
                     flag = false;
                 }
             }
