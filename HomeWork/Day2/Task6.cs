@@ -13,7 +13,7 @@ namespace HomeWork6_Day2
             Console.Write("Введите номер трамвайного билета (6-значное число): ");
             int number = Convert.ToInt32(Console.ReadLine());
 
-            if (number / 1000000 == 0)
+            if (number / 1000000 == 0 && number / 1 == 0 && number != 0)
             {
                 int leftSum = 0;
                 int rightSum = 0;
