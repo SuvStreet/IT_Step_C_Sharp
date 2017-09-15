@@ -1,8 +1,15 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace HomeWork1_Day2 {
-    class Task1 {
-        static void Main(string[] args) {
+namespace HomeWork1_Day2
+{
+    class Task1
+    {
+        static void Main(string[] args)
+        {
 
             Console.Write("Введите единицу измерения температуры (C/F): ");
             string str = Console.ReadLine();
@@ -10,7 +17,8 @@ namespace HomeWork1_Day2 {
 
             double temperatureF, temperatureC;
 
-            if (str == "F" || str == "f") {
+            if (str == "F" || str == "f")
+            {
                 Console.Write("Введите температуру в Фаренгейтах(F): ");
                 temperatureF = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine();
@@ -19,8 +27,8 @@ namespace HomeWork1_Day2 {
                 Console.WriteLine("Температура в Цельсия(C): {0:0.00}", temperatureC);
                 Console.WriteLine();
             }
-            
-            if (str == "C" || str == "c") {
+            if (str == "C" || str == "c")
+            {
                 Console.Write("Введите температуру в Цельсия(C): ");
                 temperatureC = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine();
