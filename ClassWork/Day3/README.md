@@ -307,8 +307,13 @@ Cultural comparison: 'Strasse' == 'StrBe';
 
 ```cs
 // отключено интернирование строк
+String s1 = "Ivan";
+String s2 = "Ivan";
+Console.WriteLine(Object.ReferenceEquals(s1, s2)); // False
 
-
+s1 = String.Intern(s1);
+s1 = String.Intern(s2); // Находит в хэш-таблице и возвращает ссылку
+Console.WriteLine(Object.ReferenceEquals(s1, s2)); //True
 ```
 
 Класс String. Основные методы
@@ -336,7 +341,7 @@ str4 = str4.Insert(2, "настройчиво ").ToUpper();
 
 // Проверка наличия строки
 str4.Contains("настройчиво")
-
+```
 
 
 24
