@@ -117,4 +117,4 @@ public int Pages { get; set; }
 
 **18.09.2017**
 
-[**<-- Пространство имён**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day7#Пространство-имён) `=/=` [** -->**]()
+[**<-- Пространство имён**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day7#Пространство-имён) `=/=` [**Наследование -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day_10#Наследование)
