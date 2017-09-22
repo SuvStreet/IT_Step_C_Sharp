@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 namespace ConsoleCapabilities
 {
 
-    // http://msdn.microsoft.com/ru-ru/library/vstudio/System.Console(v=vs.100).aspx
-
     class Program
     {
         static void Main(string[] args)
         {
+            int origWidth, width = 100;
+            int origHeight, height = 25;
 
             // возвращает (устанавливает) текст заголовка окна консоли. 
             Console.Title = "Эмитирование загрузки";
@@ -32,6 +32,23 @@ namespace ConsoleCapabilities
                 else if (i == 99) { Console.ForegroundColor = ConsoleColor.Yellow; }
                 else if (i == 100) { Console.ForegroundColor = ConsoleColor.White; }
             }
+
+            Console.WriteLine(); // Вывод пустрой строки
+
+            origWidth = Console.WindowWidth;
+            origHeight = Console.WindowHeight;
+
+            Console.WriteLine("Текущая ширина окна {0}, и высота текущего окна {1}.", origWidth, origHeight);
+
+            Console.WindowWidth = width;
+            Console.WindowHeight = height;
+
+            int newWidth = Console.WindowWidth;
+            int newHeight = Console.WindowHeight;
+
+            // устанавливаем значение высоты и ширины окна консоли
+           // Console.SetWindowSize(width, height);
+            Console.WriteLine("Новая ширина окна {0}, и высота текущего окна {1}.", newWidth, newHeight);
 
             // возвращает или устанавливает значение индикатора  видимости  курсора 
             Console.CursorVisible = false;
