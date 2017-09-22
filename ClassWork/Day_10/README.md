@@ -634,4 +634,4 @@ class Radio
 
 **19.09.2017**
 
-[**<-- Свойства. Индексаторы**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day9#Свойства-Индексаторы) `=/=` [** -->**]()
+[**<-- Свойства. Индексаторы**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day9#Свойства-Индексаторы) `=/=` [**Интерфейсы -->**](https://github.com/SuvStreet/IT_Step_C_Sharp/tree/master/ClassWork/Day_11#Интерфейсы)
