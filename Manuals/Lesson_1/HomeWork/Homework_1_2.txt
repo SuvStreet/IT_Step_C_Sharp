@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//      Начальный вклад в банке равен 1000 BYN. Через
+//  год размер вклада увеличивается на P
+//  процентов от имеющейся суммы(P — вещественное
+//  число, 0 < P < 25). Значение Р программа должна полу-
+//  чать у пользователя. По данному P определить, через
+//  сколько месяцев размер вклада превысит 1100 BYN, 
+//  и вывести найденное количество месяцев K(целое
+//  число) и итоговый размер вклада S(вещественное
+//  число).
+
+namespace Homework_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double S = 1000;
+            int month = 0;
+            bool temp = true;
+            
+            while (temp == true)
+            {
+                Console.WriteLine("Здраствуйте, Ваш начальный вклад в нашем банке состовляет 1 000 BYN.");
+                Console.Write("Введите процент под который вы хотите положить Ваш вклад (не более 25% в год) = ");
+
+                double P = Convert.ToInt32(Console.ReadLine());
+
+                if (0 < P && P < 25)
+                {
+                    double month_P = (P / 100) / 12;
+                    double deposit_month = 1000 * month_P;
+
+                    for (double i = S; 1100 >= S; i++)
+                    {
+                        S += deposit_month;
+                        month++;
+                    }
+                    Console.WriteLine("Ваш вклад составит {0} BYN, через {1} месяца(-ев).", S.ToString("F" + 3), month);
+                    temp = false;
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.WriteLine("Ввендите корректное значение!");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+
+            }
+
+        }
+    }
+}
