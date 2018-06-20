@@ -1,20 +1,20 @@
 > **Материал взят с методички по курсу "Платформа Microsoft.NET и язык программирования С#". Учебное заведение "Компьютерная Академия Шаг".**
 
 ># Содержание
->### [**1 Введение в платформу Microsoft .NET**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#1-Введение-вплатформу-microsoft-net)
->### [**2 Базовые понятия платформы Microsoft .NET**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#2-Базовые-понятия-платформы-microsoft-net)
+>### [**1 Введение в платформу Microsoft .NET**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#1-Введение-вплатформу-microsoft-net-1)
+>### [**2 Базовые понятия платформы Microsoft .NET**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#2-Базовые-понятия-платформы-microsoft-net-1)
 >### [**3 Введение в язык программирования C#**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#3-Введение-вязык-программирования-c)
->### [**4 Рефлекторы и дотфускаторы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#4-Рефлекторы-и-дотфускаторы)
->### [**5 Типы данных**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#5-Типы-данных)
->### [**6 Nullable типы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#6-nullable-типы)
->### [**7 Литералы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#7-Литералы)
->### [**8 Переменные**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#8-Переменные)
+>### [**4 Рефлекторы и дотфускаторы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#4-Рефлекторы-и-дотфускаторы-1)
+>### [**5 Типы данных**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#5-Типы-данных-1)
+>### [**6 Nullable типы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#6-nullable-типы-1)
+>### [**7 Литералы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#7-Литералы-1)
+>### [**8 Переменные**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#8-Переменные-1)
 >### [**9 Ввод-вывод в консольном приложении**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#9-Ввод-вывод--в-консольном-приложении)
->### [**10 Структурные и ссылочные типы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#10-Структурные-и-ссылочные-типы)
+>### [**10 Структурные и ссылочные типы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#10-Структурные-и-ссылочные-типы-1)
 >### [**11 Преобразование типов**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#11-Преобразование--типов)
->### [**12 Операторы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#12-Операторы)
->### [**13 Условия**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#13-Условия)
->### [**14 Циклы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#14-Циклы)
+>### [**12 Операторы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#12-Операторы-1)
+>### [**13 Условия**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#13-Условия-1)
+>### [**14 Циклы**](https://github.com/SuvStreet/IT_Step_C_Sharp/blob/master/Manuals/Lesson_1/ClassWork/README.md#14-Циклы-1)
 
 1 Введение в платформу Microsoft .NET
 ===
