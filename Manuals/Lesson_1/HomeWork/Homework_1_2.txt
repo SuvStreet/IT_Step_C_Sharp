@@ -47,7 +47,7 @@ namespace Homework_1_2
                 }
                 else
                 {
-                    Console.WriteLine("Ввендите корректное значение!");
+                    Console.WriteLine("Введите корректное значение!");
                     Console.ReadKey();
                     Console.Clear();
                 }
