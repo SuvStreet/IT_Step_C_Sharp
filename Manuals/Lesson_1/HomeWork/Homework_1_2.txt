@@ -31,7 +31,7 @@ namespace Homework_1_2
 
                 double P = Convert.ToInt32(Console.ReadLine());
 
-                if (0 < P && P < 25)
+                if (0 <= P && P <= 25)
                 {
                     double month_P = (P / 100) / 12;
                     double deposit_month = 1000 * month_P;
