@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//      Дано целое число N большее 0, найти число, получен-
+//  ное при прочтении числа N справа налево.Например, 
+//  если было введено число 345, то программа должна
+//  вывести число 543.
+
+namespace Homework_1_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int temp = 0;
+            
+            while (true)
+            {
+                Console.Write("Введите целое положительноке число = ");
+                int N = Convert.ToInt32(Console.ReadLine());
+
+                if (N > 0)
+                {
+                    while (true)
+                    {
+                        temp = N % 10 + temp * 10;
+                        N /= 10;
+                        if (N == 0)
+                            break;
+                    }
+
+                    Console.WriteLine(temp);
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Введите корректное значение!");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
